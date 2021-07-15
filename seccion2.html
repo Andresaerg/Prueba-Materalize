@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 2 | Materialize</title>
+    <link rel="icon" href="img/wikia-icon.png" type="image/png"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"> 
+    <style type="text/css"> </style>
+    <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        function mostrar(id)
+        {
+            var objeto=document.getElementById(id)
+            if(objeto.style.display=="block")
+                objeto.style.display="none";
+            else
+                objeto.style.display="block";
+        }
+    </script>
+    <style>
+        .oculto {display:none;}
+    </style>
+</head>
+<body>
+    <div class= "capa" ></div>
+    <div class= "parrafo">
+    <header><h1><span style="color: white">Prueba 2 Materialize</span></h1></header>
+    <br/><br/><br/><br/><br/><br/>
+    <nav>
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#test1" class="breadcrumb">Primer Párrafo</a>
+            <a href="test2" class="breadcrumb">Segundo Párrafo</a>
+            <a href="#test3" class="breadcrumb">Tercer Párrafo</a>
+          </div>
+        </div>
+      </nav>
+      <div id="test1" class="col s12">Primer Párrafo: <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sem eget augue semper imperdiet quis vel urna. Donec pulvinar pulvinar tellus, non porta ex dictum ac. Aenean suscipit odio et felis imperdiet auctor. Duis viverra at justo id finibus. Duis quis augue quis sem interdum efficitur ultrices a lectus. Integer quis velit aliquet, viverra mi ut, rhoncus lorem. Integer lacinia tristique nisl, tincidunt dapibus tellus efficitur eget. Ut eros leo, faucibus et odio non, ultrices fermentum ipsum. In imperdiet leo ac mauris pretium tincidunt.</div>
+      <br/><br/>
+      <div id="test2" class="col s12">Segundo Párrafo: <br/> In eleifend velit eget sollicitudin interdum. Integer tellus nulla, pretium ut eleifend vitae, mollis a urna. Duis nec porta ex. Etiam venenatis ante non maximus venenatis. Aenean aliquam laoreet nibh scelerisque hendrerit. Nam ornare, nunc vitae aliquam consequat, ante augue varius odio, vitae venenatis elit quam quis risus. Nulla id consequat mi. Duis ut ullamcorper risus, quis scelerisque nibh. Nulla ut aliquet massa. Cras ut tortor a dolor rhoncus rutrum vel in turpis. Ut maximus lacus purus, a porttitor erat feugiat ac. Fusce rhoncus viverra rutrum. Sed rutrum augue a leo pretium, sit amet facilisis dolor pulvinar.    </div>
+      <br/><br/>
+      <div id="test3" class="col s12">Tercer Párrafo: <br/> Curabitur finibus commodo justo, a volutpat risus dictum blandit. Nam et mi tristique est dignissim gravida in et quam. Vestibulum vitae sollicitudin dui. Mauris a scelerisque ante, quis dictum nibh. Suspendisse consequat felis est, ut tincidunt sapien porta vehicula. Nam vel urna pulvinar, venenatis nibh sit amet, dictum urna. Donec enim dolor, hendrerit in pulvinar eu, commodo ac tortor. Vivamus a velit eget mi egestas finibus sed ac.</div>
+      <br/><br/>
+      <a class="waves-effect waves-light btn" onclick="mostrar('contenido1')">button1</a>
+      <img src="img/pinguino-rey.jpg" width="250px" height="150px" class="oculto" id="contenido1"> 
+      <a class="waves-effect waves-light btn" onclick="mostrar('contenido2')">button2</a>
+      <img src="img/Penguins2.jpg" width="250px" height="150px" class="oculto" id="contenido2"> 
+      <a class="waves-effect waves-light btn" onclick="mostrar('contenido3')">button3</a>
+      <img src="img/pinguinos-3.jpg" width="250px" height="150px" class="oculto" id="contenido3"> 
+     <br/>
+    <div class="paginacion">
+        <ul class="pagination">
+            <li class="waves-effect"><a href="index.html"><i class="material-icons">chevron_left</i></a></li>
+            <li class="waves-effect"><a href="index.html">1</a></li>
+            <li class="active"><a href="seccion2.html">2</a></li>
+            <li class="waves-effect"><a href="seccion3.html">3</a></li>
+            <li class="waves-effect"><a href="seccion3.html"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+    </div>
+</body>
+</html>
